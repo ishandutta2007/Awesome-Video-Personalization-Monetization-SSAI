@@ -70,57 +70,57 @@ The table below lists leading commercial SSAI, DAI, and ad decisioning platforms
 
 ## 🔓 Open-Source GitHub Projects
 
-The following curated open-source engines, proxies, parsers, and companion tools are sorted in descending order by **GitHub Star Counts** ⭐. Each star badge links directly to the project's stargazers page.
+The following curated open-source engines, proxies, parsers, and companion tools are sorted in descending order by **GitHub Stars_Counts** ⭐. Each Stars_Badge links directly to the project's stargazers page.
 
-1. **[kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)** [![GitHub stars](https://img.shields.io/github/stars/kaltura/nginx-vod-module?style=social&color=white)](https://github.com/kaltura/nginx-vod-module/stargazers)  
+1. **[kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)** [![GitHub_Stars](https://img.shields.io/github/stars/kaltura/nginx-vod-module?style=social&color=white)](https://github.com/kaltura/nginx-vod-module/stargazers)  
    ⚡ **NGINX-based MP4 repackager & manifest stitcher** — Enables dynamic HLS and DASH manifest generation, live segment stitching, and SCTE-35 cue marker handling directly inside NGINX. Highly performant infrastructure choice for custom streaming setups.
 
-2. **[openplayerjs/openplayerjs](https://github.com/openplayerjs/openplayerjs)** [![GitHub stars](https://img.shields.io/github/stars/openplayerjs/openplayerjs?style=social&color=white)](https://github.com/openplayerjs/openplayerjs/stargazers)  
+2. **[openplayerjs/openplayerjs](https://github.com/openplayerjs/openplayerjs)** [![GitHub_Stars](https://img.shields.io/github/stars/openplayerjs/openplayerjs?style=social&color=white)](https://github.com/openplayerjs/openplayerjs/stargazers)  
    ▶️ **Lightweight HTML5 video/audio player with ad engine** — Offers seamless client and hybrid SSAI integration, supporting VAST, VMAP, SIMID, OMID, and non-linear ad rendering with SCTE-35 cue detection across modern web and Smart TV runtimes.
 
-3. **[OpenVisualCloud/Ad-Insertion-Sample](https://github.com/OpenVisualCloud/Ad-Insertion-Sample)** [![GitHub stars](https://img.shields.io/github/stars/OpenVisualCloud/Ad-Insertion-Sample?style=social&color=white)](https://github.com/OpenVisualCloud/Ad-Insertion-Sample/stargazers)  
+3. **[OpenVisualCloud/Ad-Insertion-Sample](https://github.com/OpenVisualCloud/Ad-Insertion-Sample)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenVisualCloud/Ad-Insertion-Sample?style=social&color=white)](https://github.com/OpenVisualCloud/Ad-Insertion-Sample/stargazers)  
    🤖 **Intelligent reference SSAI pipeline with OpenVINO™** — Demonstrates how to build an end-to-end server-side ad insertion workflow combining microservices with AI-powered video analytics for targeted ad decisioning and segment replacement.
 
-4. **[flipkart-incubator/madman-android](https://github.com/flipkart-incubator/madman-android)** [![GitHub stars](https://img.shields.io/github/stars/flipkart-incubator/madman-android?style=social&color=white)](https://github.com/flipkart-incubator/madman-android/stargazers)  
+4. **[flipkart-incubator/madman-android](https://github.com/flipkart-incubator/madman-android)** [![GitHub_Stars](https://img.shields.io/github/stars/flipkart-incubator/madman-android?style=social&color=white)](https://github.com/flipkart-incubator/madman-android/stargazers)  
    📱 **High-performance Android video ad manager** — Developed by Flipkart as an open-source alternative to Google's standard IMA Android SDK. Provides full UI control, low latency, and direct custom VAST response rendering for native video applications.
 
-5. **[Eyevinn/chaos-stream-proxy](https://github.com/Eyevinn/chaos-stream-proxy)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/chaos-stream-proxy?style=social&color=white)](https://github.com/Eyevinn/chaos-stream-proxy/stargazers)  
+5. **[Eyevinn/chaos-stream-proxy](https://github.com/Eyevinn/chaos-stream-proxy)** [![GitHub_Stars](https://img.shields.io/github/stars/Eyevinn/chaos-stream-proxy?style=social&color=white)](https://github.com/Eyevinn/chaos-stream-proxy/stargazers)  
    🧪 **Chaos engineering proxy for HTTP video streams** — Injects simulated latency, manifest errors, and segment drops into HLS/DASH streams. Essential tool for testing SSAI player failover mechanisms and client error handling.
 
-6. **[basil79/ads-manager](https://github.com/basil79/ads-manager)** [![GitHub stars](https://img.shields.io/github/stars/basil79/ads-manager?style=social&color=white)](https://github.com/basil79/ads-manager/stargazers)  
+6. **[basil79/ads-manager](https://github.com/basil79/ads-manager)** [![GitHub_Stars](https://img.shields.io/github/stars/basil79/ads-manager?style=social&color=white)](https://github.com/basil79/ads-manager/stargazers)  
    📦 **HTML5 Video Ads Manager library** — Built on top of `@dailymotion/vast-client`, providing scheduled linear and non-linear ad pod playback management for HTML5 video players.
 
-7. **[dailymotion/vmap-js](https://github.com/dailymotion/vmap-js)** [![GitHub stars](https://img.shields.io/github/stars/dailymotion/vmap-js?style=social&color=white)](https://github.com/dailymotion/vmap-js/stargazers)  
+7. **[dailymotion/vmap-js](https://github.com/dailymotion/vmap-js)** [![GitHub_Stars](https://img.shields.io/github/stars/dailymotion/vmap-js?style=social&color=white)](https://github.com/dailymotion/vmap-js/stargazers)  
    📋 **Official Dailymotion VMAP JavaScript parser** — Parses IAB VMAP (Video Multiple Ad Playlist) XML specs to structure complex ad schedules, break timings, and ad tag URLs for web streaming integrations.
 
-8. **[Eyevinn/test-adserver](https://github.com/Eyevinn/test-adserver)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/test-adserver?style=social&color=white)](https://github.com/Eyevinn/test-adserver/stargazers)  
+8. **[Eyevinn/test-adserver](https://github.com/Eyevinn/test-adserver)** [![GitHub_Stars](https://img.shields.io/github/stars/Eyevinn/test-adserver?style=social&color=white)](https://github.com/Eyevinn/test-adserver/stargazers)  
    🛠️ **Specialized testing ad server for SSAI development** — Consistently outputs standardized VAST/VMAP test payloads, records incoming request headers and query parameters, and exposes a Swagger UI for validating SSAI manifest proxies.
 
-9. **[glomex/vast-ima-player](https://github.com/glomex/vast-ima-player)** [![GitHub stars](https://img.shields.io/github/stars/glomex/vast-ima-player?style=social&color=white)](https://github.com/glomex/vast-ima-player/stargazers)  
+9. **[glomex/vast-ima-player](https://github.com/glomex/vast-ima-player)** [![GitHub_Stars](https://img.shields.io/github/stars/glomex/vast-ima-player?style=social&color=white)](https://github.com/glomex/vast-ima-player/stargazers)  
    🎮 **Convenience video wrapper for Google IMA SDK** — Simplifies embedding Google Interactive Media Ads (IMA) HTML5 SDK into standard web players for linear video ad serving.
 
-10. **[SimpleSSAI/SimpleSSAI](https://github.com/SimpleSSAI/SimpleSSAI)** [![GitHub stars](https://img.shields.io/github/stars/SimpleSSAI/SimpleSSAI?style=social&color=white)](https://github.com/SimpleSSAI/SimpleSSAI/stargazers)  
+10. **[SimpleSSAI/SimpleSSAI](https://github.com/SimpleSSAI/SimpleSSAI)** [![GitHub_Stars](https://img.shields.io/github/stars/SimpleSSAI/SimpleSSAI?style=social&color=white)](https://github.com/SimpleSSAI/SimpleSSAI/stargazers)  
     🚀 **API-driven server-side ad insertion engine** — Lightweight open-source solution designed for stitching ad breaks into HLS stream manifests to bypass ad blockers with minimal configuration overhead.
 
-11. **[Eyevinn/vast-info](https://github.com/Eyevinn/vast-info)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/vast-info?style=social&color=white)](https://github.com/Eyevinn/vast-info/stargazers)  
+11. **[Eyevinn/vast-info](https://github.com/Eyevinn/vast-info)** [![GitHub_Stars](https://img.shields.io/github/stars/Eyevinn/vast-info?style=social&color=white)](https://github.com/Eyevinn/vast-info/stargazers)  
     🔍 **VAST/VMAP inspection CLI & Node module** — Command-line utility to parse, validate, and display human-readable diagnostic trees from complex VAST and VMAP XML responses.
 
-12. **[Eyevinn/sgai-ad-proxy](https://github.com/Eyevinn/sgai-ad-proxy)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/sgai-ad-proxy?style=social&color=white)](https://github.com/Eyevinn/sgai-ad-proxy/stargazers)  
+12. **[Eyevinn/sgai-ad-proxy](https://github.com/Eyevinn/sgai-ad-proxy)** [![GitHub_Stars](https://img.shields.io/github/stars/Eyevinn/sgai-ad-proxy?style=social&color=white)](https://github.com/Eyevinn/sgai-ad-proxy/stargazers)  
     📡 **Experimental Server-Guided Ad Insertion (SGAI) HTTP proxy** — Implements Apple HLS Interstitial tags (`EXT-X-DATERANGE`) to deliver personalized ad breaks with dynamic macro replacements (`[template.duration]`, `[template.sessionId]`).
 
-13. **[dds05/videojs-mediatailor-ssai](https://github.com/dds05/videojs-mediatailor-ssai)** [![GitHub stars](https://img.shields.io/github/stars/dds05/videojs-mediatailor-ssai?style=social&color=white)](https://github.com/dds05/videojs-mediatailor-ssai/stargazers)  
+13. **[dds05/videojs-mediatailor-ssai](https://github.com/dds05/videojs-mediatailor-ssai)** [![GitHub_Stars](https://img.shields.io/github/stars/dds05/videojs-mediatailor-ssai?style=social&color=white)](https://github.com/dds05/videojs-mediatailor-ssai/stargazers)  
     🔌 **Video.js plugin for AWS Elemental MediaTailor** — Automates client-side tracking beacon firing, UI controls, and ad break state sync when streaming MediaTailor-stitched HLS feeds.
 
-14. **[aviral-zype/videojs-vast-plugins](https://github.com/aviral-zype/videojs-vast-plugins)** [![GitHub stars](https://img.shields.io/github/stars/aviral-zype/videojs-vast-plugins?style=social&color=white)](https://github.com/aviral-zype/videojs-vast-plugins/stargazers)  
+14. **[aviral-zype/videojs-vast-plugins](https://github.com/aviral-zype/videojs-vast-plugins)** [![GitHub_Stars](https://img.shields.io/github/stars/aviral-zype/videojs-vast-plugins?style=social&color=white)](https://github.com/aviral-zype/videojs-vast-plugins/stargazers)  
     📺 **Single video element VAST/VMAP plugin for VideoJS** — Lightweight VideoJS plugin optimized for HTML5 Smart TV devices, offering preroll, midroll, and postroll execution without multiple DOM elements.
 
-15. **[matvp91/hlspresso](https://github.com/matvp91/hlspresso)** [![GitHub stars](https://img.shields.io/github/stars/matvp91/hlspresso?style=social&color=white)](https://github.com/matvp91/hlspresso/stargazers)  
+15. **[matvp91/hlspresso](https://github.com/matvp91/hlspresso)** [![GitHub_Stars](https://img.shields.io/github/stars/matvp91/hlspresso?style=social&color=white)](https://github.com/matvp91/hlspresso/stargazers)  
     ⚡ **Edge-native HLS interstitial insertion proxy** — Lightweight proxy built for Cloudflare Workers and AWS Lambda. Dynamically injects HLS Interstitial markers on the fly driven by manual APIs or VMAP schedules.
 
-16. **[etf1/IAB](https://github.com/etf1/IAB)** [![GitHub stars](https://img.shields.io/github/stars/etf1/IAB?style=social&color=white)](https://github.com/etf1/IAB/stargazers)  
+16. **[etf1/IAB](https://github.com/etf1/IAB)** [![GitHub_Stars](https://img.shields.io/github/stars/etf1/IAB?style=social&color=white)](https://github.com/etf1/IAB/stargazers)  
     📝 **TypeScript IAB VAST & VMAP parser library** — Node.js library for strict parsing, validation, and object serialization of Interactive Advertising Bureau (IAB) VAST and VMAP specs.
 
-17. **[Eyevinn/ritcher](https://github.com/Eyevinn/ritcher)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/ritcher?style=social&color=white)](https://github.com/Eyevinn/ritcher/stargazers)  
+17. **[Eyevinn/ritcher](https://github.com/Eyevinn/ritcher)** [![GitHub_Stars](https://img.shields.io/github/stars/Eyevinn/ritcher?style=social&color=white)](https://github.com/Eyevinn/ritcher/stargazers)  
     🦀 **Production-grade Rust-based HLS/DASH manifest stitcher** — High-performance open-source SSAI and SGAI stitching engine featuring VAST tag resolution, Valkey/Redis distributed session storage, Prometheus observability, and frame-accurate segment replacement.
 
 ---
@@ -152,7 +152,7 @@ Contributions are welcome! Please follow these simple guidelines:
 
 1. 🍴 Fork this repository.
 2. 🌿 Create a new topic branch (`git checkout -b feature/add-new-project`).
-3. 📝 Add your entry to `README.md` maintaining the existing table or list structure. Ensure GitHub links and star badges are included for open-source repositories.
+3. 📝 Add your entry to `README.md` maintaining the existing table or list structure. Ensure GitHub links and Stars_Badges are included for open-source repositories.
 4. 📬 Submit a Pull Request detailing the solution features and target deployment.
 
 ---
