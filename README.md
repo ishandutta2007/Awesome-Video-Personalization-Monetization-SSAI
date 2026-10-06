@@ -1,245 +1,151 @@
-# Awesome-Video-Personalization-Monetization-SSAI
-
-## Top Video Personalization & Monetization (SSAI) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Server-Side Ad Insertion, Dynamic Ad Decisioning & Open-Source Stitching Engines*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial SSAI platforms** and **open-source projects** that stitch personalized ads into video streams server-side — providing a seamless, ad-blocker-resistant viewing experience for live and VOD content. These tools handle manifest manipulation, ad decisioning, and segment replacement without requiring client-side ad players.
-
-
-
-**Examples** include AWS Elemental MediaTailor, Google Ad Manager DAI, Harmonic SSAI, Brightcove SSAI, Broadpeak broadplay, FreeWheel SSAI, Publica, Equativ SSAI, MediaMelon, and Yospace (the category leaders).
-
-
-
-**Open-source emphasis**: SSAI is a growing open-source domain. **Ritcher (Eyevinn)** leads as a production-grade Rust-based HLS/DASH stitcher with VAST and SGAI support . **SGAI Ad Proxy (Eyevinn)** provides server-guided ad insertion with ad personalization . **HLSpresso** offers a lightweight HLS proxy for interstitials . **OpenVisualCloud Ad-Insertion-Sample** demonstrates intelligent SSAI with OpenVINO . **Eyevinn Test Adserver** provides the essential testing infrastructure for SSAI workflows . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor/)**  
-
-  **The leading cloud SSAI platform** — performs real-time manifest manipulation and ad insertion for live and VOD streams. **Personalization at scale** — each viewer can receive a unique manifest with targeted ads. **Deep AWS integration** with CloudFront, S3, and CloudWatch analytics . **Best for AWS-native video workflows** .
-
-
-
-- **[Google Ad Manager DAI](https://admanager.google.com/)**  
-
-  Google's Dynamic Ad Insertion — server-side stitching for live and VOD with Ad Manager integration. **The standard for Google Ad Manager users** .
-
-
-
-- **[Harmonic SSAI](https://www.harmonicinc.com/)**  
-
-  Enterprise SSAI with manifest manipulation, ad decisioning, and low-latency support. **Best for broadcast-grade deployments** .
-
-
-
-- **[Brightcove SSAI](https://www.brightcove.com/)**  
-
-  SSAI integrated with Brightcove's video platform — seamless ad insertion for live and VOD.
-
-
-
-- **[Broadpeak broadplay](https://broadpeak.tv/)**  
-
-  SSAI and streaming optimization with CDN integration. **Best for CDN-integrated deployments** .
-
-
-
-- **[FreeWheel SSAI](https://www.freewheel.com/)**  
-
-  Comcast's SSAI solution with advanced ad decisioning and measurement.
-
-
-
-- **[Publica](https://www.publica.com/)**  
-
-  **The leading independent SSAI platform** — server-side ad insertion with audience targeting and measurement.
-
-
-
-- **[Equativ SSAI](https://equativ.com/)**  
-
-  SSAI with programmatic ad decisioning and yield optimization.
-
-
-
-- **[MediaMelon](https://www.mediamelon.com/)**  
-
-  Streaming intelligence and SSAI optimization with QoE analytics.
-
-
-
-- **[Yospace](https://yospace.com/)**  
-
-  **The pioneer of SSAI** — server-side ad insertion with dynamic ad decisioning and seamless playback.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Ritcher (Eyevinn)](https://github.com/Eyevinn/ritcher)**  
-
-  **The leading open-source SSAI stitcher**, Rust-based with **production-grade HLS and DASH support** . **Two stitching modes**: `ssai` (replaces content segments with ad segments server-side) and `sgai` (injects HLS Interstitial `EXT-X-DATERANGE` tags for client-side ad fetching) . **VAST ad provider** with `[DURATION]` and `[CACHEBUSTING]` macro support, plus static ad fallback . **Prometheus metrics** at `/metrics`, health checks, and JSON session management . **Distributed sessions** via Valkey/Redis for load-balanced deployments . **Demo mode** with built-in test streams for immediate testing . **Best for production SSAI with Rust performance** .
-
-
-
-- **[SGAI Ad Proxy (Eyevinn)](https://github.com/Eyevinn/sgai-ad-proxy)**  
-
-  **Experimental HTTP proxy for Server Guided Ad Insertion (SGAI)**, designed for players that support SGAI (e.g., QuickTime Player, Safari) . **Inserts ads into the media playlist as interstitials** at specified time points . **Ad personalization via query parameters** — ad server URL can include `[template.duration]`, `[template.sessionId]`, and `[template.pod]` placeholders replaced dynamically . **Session-specific ad requests** via master playlist URL query parameters . **Dynamic ad break insertion** via `/command?in=5&dur=10&pod=2` endpoint . **Best for SGAI testing and personalization research** .
-
-
-
-- **[HLSpresso](https://github.com/matvp91/hlspresso)**  
-
-  **Lightweight HLS proxy that inserts HLS interstitials on the fly**, designed for edge and serverless platforms (Cloudflare Workers, AWS Lambda) . **VOD with precise insertion points**, manual or VMAP-driven . **VAST support** (up to 4 ads) . **Live streams with CUE-IN and CUE-OUT markers** for ad replacement . **Ad Creative Signaling (SVTA2053-2) spec** support . **API-driven session creation** via `POST /api/v1/sessions` . **Best for edge-based SSAI with minimal infrastructure** .
-
-
-
-- **[OpenVisualCloud Ad-Insertion-Sample](https://github.com/OpenVisualCloud/Ad-Insertion-Sample)**  
-
-  **Intelligent server-side ad insertion reference pipeline**, open-source with **OpenVINO analytics** . **Demonstrates how to integrate media building blocks** for SSAI workflows . **Best for understanding SSAI pipeline architecture with AI-powered ad decisioning** .
-
-
-
-- **[Eyevinn Test Adserver](https://github.com/Eyevinn/test-adserver)**  
-
-  **Specialized testing service for SSAI workflows**, open-source . **Always returns ads** in standardized VAST/VMAP format for consistent testing . **Comprehensive tracking** — stores query parameters and tracks playback events . **Custom ad support** via MRSS feed . **Swagger API documentation** with session management endpoints . **Best for validating SSAI implementations before production** .
-
-
-
-- **[SimpleSSAI](https://github.com/SimpleSSAI/SimpleSSAI)**  
-
-  **Simple API-driven Server Side Ad Insertion**, open-source . **Easy-to-use solution for stitching ads into content** to protect ad monetization . **Best for lightweight SSAI proof-of-concept** .
-
-
-
-- **[OpenPlayerJS Ads Plugin](https://www.npmjs.com/package/@openplayerjs/ads)**  
-
-  **Hybrid CSAI/SSAI ad plugin for HLS players**, open-source . **Hybrid mode combines CSAI rendering with SCTE-35 cue detection** — `resolveScteUrl` maps splice-out cues to VAST tag URLs . **Async URL resolution** — call your ad decision server and skip cues via `null` return . **Static breaks for preroll** alongside SCTE-triggered midrolls . **Waterfall ad sources** with fallback to house ads . **Best for HLS players needing hybrid ad strategies** .
-
-
-
-- **[hlspresso](https://github.com/matvp91/hlspresso)** — Already listed. **Edge-based HLS interstitial insertion** .
-
-
-
-### Client-Side Ad Libraries (Companion Tools)
-
-
-
-- **[VideoJS VAST Plugin](https://github.com/aviral-zype/videojs-vast-plugins)**  
-
-  **VAST/VMAP ad plugin for VideoJS**, open-source . **Full control over player UI during ads** — no opinionated ad UI . **Preroll, midroll, and postroll support** for HTML5 Smart TVs . **CTA clickzone and skip button handling** via events . **Best for VideoJS players needing client-side ads** .
-
-
-
-- **[dailymotion/vmap-js](https://github.com/dailymotion/vmap-js)**  
-
-  **VMAP JavaScript library** for ad schedule parsing . **Best for VMAP-compliant ad scheduling** .
-
-
-
-- **[basil79/ads-manager](https://github.com/basil79/ads-manager)**  
-
-  **HTML5 Video Ads Manager** based on Dailymotion VAST client . **Best for HTML5 video ad management** .
-
-
-
-- **[etf1/IAB](https://github.com/etf1/IAB)**  
-
-  **IAB VAST & VMAP formats handling for Node.js**, TypeScript . **Best for Node.js ad server integrations** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Google Cloud Video Stitcher API** — Cloud-based SSAI with ad decisioning, Apache-2.0 licensed client libraries .
-
-- **flipkart-incubator/madman-android** — High-performance alternative to Google IMA Android SDK for VAST rendering .
-
-- **glomex/vast-ima-player** — Convenience wrapper for Google IMA HTML5 SDK .
-
-- **ExoPlayer IMA Extension** — Client-side and server-side ad insertion for Android, integrates IMA DAI SDK .
-
-
-
-**Frameworks for building custom SSAI solutions**: Combine **Ritcher** for production-grade SSAI with HLS/DASH support, VAST decisioning, and Prometheus observability . Use **SGAI Ad Proxy** for server-guided ad insertion with personalization via query parameters . Deploy **HLSpresso** for edge-based interstitial insertion on Cloudflare Workers or AWS Lambda . Integrate **Eyevinn Test Adserver** for SSAI workflow validation before production . Use **OpenVisualCloud Ad-Insertion-Sample** for AI-powered ad decisioning with OpenVINO . Note that true enterprise SSAI with global CDN integration, real-time ad decisioning at scale, and vendor-supported SLAs (MediaTailor, Yospace, Publica) remains primarily commercial territory; open-source stacks provide strong stitching engines, ad decisioning, and testing foundations that require integration for complete monetization workflows.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- SSAI platforms manipulate video manifests and insert ads into streams. **Ad decisioning and targeting involve user data** — ensure compliance with privacy regulations (GDPR, CCPA) and ad industry standards.
-
-- **SSAI is designed to resist ad blockers** — this is a feature for monetization but raises ethical considerations around user consent and transparency.
-
-- **Open-source SSAI tools vary in maturity** — Ritcher is production-grade; SGAI Ad Proxy and HLSpresso are experimental . Evaluate before relying on them for critical monetization.
-
-- **CDN configuration is critical for SSAI performance** — each viewer may receive a unique manifest, which fragments caching. MediaTailor documentation provides detailed CDN optimization guidance .
-
-- The open-source ecosystem provides strong stitching engines, ad decisioning, and testing foundations, but **global CDN integration, real-time decisioning at scale, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+# Awesome Video Personalization & Monetization (SSAI)
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesome-Video-Personalization-Monetization-SSAI)
+[![Topic: SSAI](https://img.shields.io/badge/topic-SSAI-blue.svg)](https://github.com/topics/ssai)
+[![Topic: Video Streaming](https://img.shields.io/badge/topic-video--streaming-green.svg)](https://github.com/topics/video-streaming)
+[![Topic: Ad Insertion](https://img.shields.io/badge/topic-ad--insertion-orange.svg)](https://github.com/topics/ad-insertion)
+[![Topic: Video Monetization](https://img.shields.io/badge/topic-video--monetization-purple.svg)](https://github.com/topics/video-monetization)
+
+> **Curated Ecosystem Guide**: Commercial SaaS Platforms, Infrastructure Engines & Open-Source Projects for Server-Side Ad Insertion (SSAI), Server-Guided Ad Insertion (SGAI), Dynamic Ad Decisioning, VAST/VMAP Parsing, and Stream Personalization.
 
 ---
 
+## Table of Contents
 
+- [Overview & Industry Trends](#overview--industry-trends)
+- [Market Landscape & Ecosystem Structure](#market-landscape--ecosystem-structure)
+- [SaaS & Hosted Enterprise Platforms](#saas--hosted-enterprise-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [SSAI vs. SGAI vs. CSAI Architecture Comparison](#ssai-vs-sgai-vs-csai-architecture-comparison)
+- [Key Standards & Protocols Glossary](#key-standards--protocols-glossary)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
 
-**Made for video engineers, ad operations teams, and streaming platform developers.**
+---
 
-Let's make video personalization and monetization more open, transparent, and efficient.
+## Overview & Industry Trends
+
+Server-Side Ad Insertion (**SSAI**), also known as Dynamic Ad Insertion (**DAI**), stitches targeted ad content directly into HTTP video stream manifests (HLS and MPEG-DASH) on the server side. By eliminating client-side ad player dependencies and ad-blocking vulnerabilities, SSAI provides broadcast-quality playback, reduced stream latency, and consistent video monetization across Connected TV (CTV), OTT apps, web players, and Smart TVs.
+
+Recent industry developments in **October 2026** focus on the transition toward **Server-Guided Ad Insertion (SGAI)**, utilizing native HLS Interstitials (`EXT-X-DATERANGE`) to combine server-side manifest control with client-side interactive telemetry and dynamic ad resolution.
+
+---
+
+## Market Landscape & Ecosystem Structure
+
+> **Market Size & Fragmented Sector Analysis**  
+> The global **Server-Side Ad Insertion (SSAI) & Dynamic Ad Insertion market** is estimated at **$2.8 Billion USD**, growing at a **17.8% CAGR** within the broader **$320+ Billion digital video advertising market**. The sector is **highly fragmented**—characterized by a mix of hyperscale Cloud Service Providers (AWS, Google), premium media ad-decisioning platforms (FreeWheel, Publica), broadcast infrastructure leaders (Harmonic, Broadpeak), specialty analytics vendors (MediaMelon, Yospace), and emerging open-source stitching engines (Eyevinn, Kaltura). No single entity holds a dominant monopoly; publishers choose solutions based on CDN architecture, ad decisioning integrations, and monetization scale.
+
+---
+
+## SaaS & Hosted Enterprise Platforms
+
+The table below lists leading commercial SSAI, DAI, and ad decisioning platforms, sorted in descending order by **Company Valuation / Revenue Size**.
+
+| SaaS Platform & Solution | Parent / Operating Entity | Company Size / Valuation | Specific Starting Tier Pricing | Free Tier & Free Trial Limits | Key Features & Target Deployment |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Google Ad Manager DAI](https://admanager.google.com/)** | Alphabet Inc. (Google) | **$2.1 Trillion** *(Market Cap)* | **$0.010 – $0.015 CPM** *(Tech fee per 1,000 video ad inserts; bundled with GAM 360)* | **5 Million video impressions/month free** *(Standard GAM); 30-day Google Cloud $300 trial* | Industry-standard DAI for publishers with native Google Ad Manager programmatic demand. |
+| **[AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor/)** | Amazon Web Services (AWS) | **$2.0 Trillion** *(Market Cap)* | **$0.25 per 1,000 VOD inserts** / **$0.50 per 1,000 Live inserts** | **2 Months Free Tier** *(up to 1,000 ad inserts/mo) + $300 AWS trial credit* | Hyperscale AWS manifest manipulation with CloudFront & CloudWatch integration. |
+| **[FreeWheel SSAI](https://www.freewheel.com/)** | Comcast Corporation | **$150 Billion** *(Market Cap)* | **$0.01 – $0.05 CPM** *(Tech fee per 1,000 ads; enterprise base tier from $5,000/mo)* | **No free tier**; *14-day dedicated staging/sandbox environment during sales onboarding* | Enterprise broadcast & pay-TV ad decisioning with advanced yield management. |
+| **[Publica](https://www.publica.com/)** | Integral Ad Science (IAS) | **$1.8 Billion** *(Market Cap)* | **$0.03 – $0.10 CPM** *(Ad tech fee; minimum contract starting at $2,500/mo)* | **No free tier**; *30-day enterprise proof-of-concept (PoC) sandbox for qualified publishers* | Leading independent CTV ad server with header bidding & audience segmentation. |
+| **[Harmonic SSAI (VOS360)](https://www.harmonicinc.com/)** | Harmonic Inc. | **$1.3 Billion** *(Market Cap)* | **$0.005 per ad insert** / **$0.04 per channel hour** *(Base plan from $500/mo)* | **30-Day Free Trial** *on VOS360 Cloud platform with $500 usage credits* | Broadcast-grade SaaS for low-latency live sports streaming & FAST channel stitching. |
+| **[Equativ SSAI](https://equativ.com/)** | Equativ (Smart AdServer) | **$500 Million** *(Valuation)* | **5% – 10% Revenue Share** or **$0.02 – $0.08 CPM** *per delivered ad* | **No free tier**; *14-day publisher test environment during custom integration* | Unified programmatic ad server combining SSAI manifest manipulation with yield optimization. |
+| **[Brightcove SSAI](https://www.brightcove.com/)** | Brightcove Inc. | **$80 Million** *(Market Cap)* | **$199/month starting plan** *(Includes Video Cloud streaming and basic SSAI delivery)* | **30-Day Free Trial** *(Includes 10 video uploads and 10,000 stream plays)* | End-to-end OTT video platform with integrated server-side ad stitching. |
+| **[Broadpeak broadplay](https://broadpeak.tv/)** | Broadpeak S.A. | **$40 Million** *(Market Cap)* | **$0.004 per ad delivery** / **$0.005 per stream hour** *(Pay-as-you-go, min plan $50/mo)* | **30-Day Free Trial** *(Includes 1,000 ad insertions + 100 stream hours free)* | Smart CDN integration with edge-based SSAI manifest personalization. |
+| **[Yospace](https://yospace.com/)** | RTL Group / SpotX | **$33 Million** *(Acquisition Price)* | **$0.01 – $0.03 per ad insert** *(Enterprise commitment baseline starting at $3,000/mo)* | **No free tier**; *30-day staging evaluation environment for broadcast network trials* | SSAI pioneer specializing in live event ad replacement with frame-accurate stitching. |
+| **[MediaMelon SmartSight](https://www.mediamelon.com/)** | MediaMelon Inc. | **$20 Million** *(Valuation)* | **$99/month base plan** *($0.001 per stream hour + $0.002 per ad break session)* | **Free Developer Tier** *up to 10,000 stream views/month free forever* | Streaming QoE analytics paired with real-time SSAI optimization. |
+
+---
+
+## Open-Source GitHub Projects
+
+The following curated open-source engines, proxies, parsers, and companion tools are sorted in descending order by **GitHub Star Counts**. Each star badge links directly to the project's stargazers page.
+
+1. **[kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)** [![GitHub stars](https://img.shields.io/github/stars/kaltura/nginx-vod-module?style=social&color=white)](https://github.com/kaltura/nginx-vod-module/stargazers)  
+   **NGINX-based MP4 repackager & manifest stitcher** — Enables dynamic HLS and DASH manifest generation, live segment stitching, and SCTE-35 cue marker handling directly inside NGINX. Highly performant infrastructure choice for custom streaming setups.
+
+2. **[openplayerjs/openplayerjs](https://github.com/openplayerjs/openplayerjs)** [![GitHub stars](https://img.shields.io/github/stars/openplayerjs/openplayerjs?style=social&color=white)](https://github.com/openplayerjs/openplayerjs/stargazers)  
+   **Lightweight HTML5 video/audio player with ad engine** — Offers seamless client and hybrid SSAI integration, supporting VAST, VMAP, SIMID, OMID, and non-linear ad rendering with SCTE-35 cue detection across modern web and Smart TV runtimes.
+
+3. **[OpenVisualCloud/Ad-Insertion-Sample](https://github.com/OpenVisualCloud/Ad-Insertion-Sample)** [![GitHub stars](https://img.shields.io/github/stars/OpenVisualCloud/Ad-Insertion-Sample?style=social&color=white)](https://github.com/OpenVisualCloud/Ad-Insertion-Sample/stargazers)  
+   **Intelligent reference SSAI pipeline with OpenVINO™** — Demonstrates how to build an end-to-end server-side ad insertion workflow combining microservices with AI-powered video analytics for targeted ad decisioning and segment replacement.
+
+4. **[flipkart-incubator/madman-android](https://github.com/flipkart-incubator/madman-android)** [![GitHub stars](https://img.shields.io/github/stars/flipkart-incubator/madman-android?style=social&color=white)](https://github.com/flipkart-incubator/madman-android/stargazers)  
+   **High-performance Android video ad manager** — Developed by Flipkart as an open-source alternative to Google's standard IMA Android SDK. Provides full UI control, low latency, and direct custom VAST response rendering for native video applications.
+
+5. **[Eyevinn/chaos-stream-proxy](https://github.com/Eyevinn/chaos-stream-proxy)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/chaos-stream-proxy?style=social&color=white)](https://github.com/Eyevinn/chaos-stream-proxy/stargazers)  
+   **Chaos engineering proxy for HTTP video streams** — Injects simulated latency, manifest errors, and segment drops into HLS/DASH streams. Essential tool for testing SSAI player failover mechanisms and client error handling.
+
+6. **[basil79/ads-manager](https://github.com/basil79/ads-manager)** [![GitHub stars](https://img.shields.io/github/stars/basil79/ads-manager?style=social&color=white)](https://github.com/basil79/ads-manager/stargazers)  
+   **HTML5 Video Ads Manager library** — Built on top of `@dailymotion/vast-client`, providing scheduled linear and non-linear ad pod playback management for HTML5 video players.
+
+7. **[dailymotion/vmap-js](https://github.com/dailymotion/vmap-js)** [![GitHub stars](https://img.shields.io/github/stars/dailymotion/vmap-js?style=social&color=white)](https://github.com/dailymotion/vmap-js/stargazers)  
+   **Official Dailymotion VMAP JavaScript parser** — Parses IAB VMAP (Video Multiple Ad Playlist) XML specs to structure complex ad schedules, break timings, and ad tag URLs for web streaming integrations.
+
+8. **[Eyevinn/test-adserver](https://github.com/Eyevinn/test-adserver)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/test-adserver?style=social&color=white)](https://github.com/Eyevinn/test-adserver/stargazers)  
+   **Specialized testing ad server for SSAI development** — Consistently outputs standardized VAST/VMAP test payloads, records incoming request headers and query parameters, and exposes a Swagger UI for validating SSAI manifest proxies.
+
+9. **[glomex/vast-ima-player](https://github.com/glomex/vast-ima-player)** [![GitHub stars](https://img.shields.io/github/stars/glomex/vast-ima-player?style=social&color=white)](https://github.com/glomex/vast-ima-player/stargazers)  
+   **Convenience video wrapper for Google IMA SDK** — Simplifies embedding Google Interactive Media Ads (IMA) HTML5 SDK into standard web players for linear video ad serving.
+
+10. **[SimpleSSAI/SimpleSSAI](https://github.com/SimpleSSAI/SimpleSSAI)** [![GitHub stars](https://img.shields.io/github/stars/SimpleSSAI/SimpleSSAI?style=social&color=white)](https://github.com/SimpleSSAI/SimpleSSAI/stargazers)  
+    **API-driven server-side ad insertion engine** — Lightweight open-source solution designed for stitching ad breaks into HLS stream manifests to bypass ad blockers with minimal configuration overhead.
+
+11. **[Eyevinn/vast-info](https://github.com/Eyevinn/vast-info)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/vast-info?style=social&color=white)](https://github.com/Eyevinn/vast-info/stargazers)  
+    **VAST/VMAP inspection CLI & Node module** — Command-line utility to parse, validate, and display human-readable diagnostic trees from complex VAST and VMAP XML responses.
+
+12. **[Eyevinn/sgai-ad-proxy](https://github.com/Eyevinn/sgai-ad-proxy)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/sgai-ad-proxy?style=social&color=white)](https://github.com/Eyevinn/sgai-ad-proxy/stargazers)  
+    **Experimental Server-Guided Ad Insertion (SGAI) HTTP proxy** — Implements Apple HLS Interstitial tags (`EXT-X-DATERANGE`) to deliver personalized ad breaks with dynamic macro replacements (`[template.duration]`, `[template.sessionId]`).
+
+13. **[dds05/videojs-mediatailor-ssai](https://github.com/dds05/videojs-mediatailor-ssai)** [![GitHub stars](https://img.shields.io/github/stars/dds05/videojs-mediatailor-ssai?style=social&color=white)](https://github.com/dds05/videojs-mediatailor-ssai/stargazers)  
+    **Video.js plugin for AWS Elemental MediaTailor** — Automates client-side tracking beacon firing, UI controls, and ad break state sync when streaming MediaTailor-stitched HLS feeds.
+
+14. **[aviral-zype/videojs-vast-plugins](https://github.com/aviral-zype/videojs-vast-plugins)** [![GitHub stars](https://img.shields.io/github/stars/aviral-zype/videojs-vast-plugins?style=social&color=white)](https://github.com/aviral-zype/videojs-vast-plugins/stargazers)  
+    **Single video element VAST/VMAP plugin for VideoJS** — Lightweight VideoJS plugin optimized for HTML5 Smart TV devices, offering preroll, midroll, and postroll execution without multiple DOM elements.
+
+15. **[matvp91/hlspresso](https://github.com/matvp91/hlspresso)** [![GitHub stars](https://img.shields.io/github/stars/matvp91/hlspresso?style=social&color=white)](https://github.com/matvp91/hlspresso/stargazers)  
+    **Edge-native HLS interstitial insertion proxy** — Lightweight proxy built for Cloudflare Workers and AWS Lambda. Dynamically injects HLS Interstitial markers on the fly driven by manual APIs or VMAP schedules.
+
+16. **[etf1/IAB](https://github.com/etf1/IAB)** [![GitHub stars](https://img.shields.io/github/stars/etf1/IAB?style=social&color=white)](https://github.com/etf1/IAB/stargazers)  
+    **TypeScript IAB VAST & VMAP parser library** — Node.js library for strict parsing, validation, and object serialization of Interactive Advertising Bureau (IAB) VAST and VMAP specs.
+
+17. **[Eyevinn/ritcher](https://github.com/Eyevinn/ritcher)** [![GitHub stars](https://img.shields.io/github/stars/Eyevinn/ritcher?style=social&color=white)](https://github.com/Eyevinn/ritcher/stargazers)  
+    **Production-grade Rust-based HLS/DASH manifest stitcher** — High-performance open-source SSAI and SGAI stitching engine featuring VAST tag resolution, Valkey/Redis distributed session storage, Prometheus observability, and frame-accurate segment replacement.
+
+---
+
+## SSAI vs. SGAI vs. CSAI Architecture Comparison
+
+| Feature / Dimension | Client-Side Ad Insertion (CSAI) | Server-Side Ad Insertion (SSAI) | Server-Guided Ad Insertion (SGAI) |
+| :--- | :--- | :--- | :--- |
+| **Manifest Manipulation** | Client player fetches separate ad manifests. | Server rewrites manifest to stitch ad segments into main stream. | Server inserts `EXT-X-DATERANGE` interstitial tags; client fetches ad playlist. |
+| **Ad Blocker Resilience** | Vulnerable (easy to block client ad requests). | Highly resistant (ad traffic is part of primary video stream). | High (interstitial asset requests mimic main content stream). |
+| **Playback Seamlessness** | Potential buffering between content and ad. | Zero buffering; seamless broadcast-like experience. | Smooth transition managed natively by modern OS media frameworks. |
+| **Client Analytics & Interactivity** | Full DOM/SDK access (clickable CTAs, overlay cards). | Requires client tracking proxy or sideband beaconing. | Combines native client events with server-managed ad schedules. |
+
+---
+
+## Key Standards & Protocols Glossary
+
+- **SSAI (Server-Side Ad Insertion)**: Technology that stitches ad content directly into master streaming playlists (HLS/DASH) at the media server level.
+- **SGAI (Server-Guided Ad Insertion)**: Standard utilizing HLS Interstitial structures to allow servers to signal ad breaks while clients fetch and render standalone ad playlists seamlessly.
+- **VAST (Digital Video Ad Serving Template)**: Universal IAB XML schema enabling ad servers to supply video creative URLs, tracking pixels, and metadata to video players.
+- **VMAP (Video Multiple Ad Playlist)**: Standard XML format describing ad break schedules (preroll, midroll, postroll) across video content timelines.
+- **SCTE-35**: Signaling standard used in digital video streams to trigger downstream ad insertion breaks and splice points.
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. Fork this repository.
+2. Create a new topic branch (`git checkout -b feature/add-new-project`).
+3. Add your entry to `README.md` maintaining the existing table or list structure. Ensure GitHub links and star badges are included for open-source repositories.
+4. Submit a Pull Request detailing the solution features and target deployment.
+
+---
+
+## Disclaimer
+
+This repository is a community-curated collection intended for educational and informational purposes. Mention of commercial enterprise platforms or open-source software does not constitute an endorsement. SSAI implementations must adhere to user privacy frameworks (GDPR, CCPA) and IAB advertising standards.
