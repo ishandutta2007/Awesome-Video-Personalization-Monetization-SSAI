@@ -70,7 +70,7 @@ The table below lists leading commercial SSAI, DAI, and ad decisioning platforms
 
 ## 🔓 Open-Source GitHub Projects
 
-The following curated open-source engines, proxies, parsers, and companion tools are sorted in descending order by **GitHub Stars_Counts** ⭐. Each Stars_Badge links directly to the project's stargazers page.
+The following curated open-source engines, proxies, parsers, and companion tools are sorted in descending order by **GitHub_Stars_Counts** ⭐. Each Stars_Badge links directly to the project's stargazers page.
 
 1. **[kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)** [![GitHub_Stars](https://img.shields.io/github/stars/kaltura/nginx-vod-module?style=social&color=white)](https://github.com/kaltura/nginx-vod-module/stargazers)  
    ⚡ **NGINX-based MP4 repackager & manifest stitcher** — Enables dynamic HLS and DASH manifest generation, live segment stitching, and SCTE-35 cue marker handling directly inside NGINX. Highly performant infrastructure choice for custom streaming setups.
